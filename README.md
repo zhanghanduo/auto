@@ -1,5 +1,6 @@
 # auto
 ## Author
+  Handuo Zhang <hzhang032@e.ntu.edu.sg>
   Wang Chen <wang.chen@zoho.com>
 
 ## Usage
@@ -7,7 +8,7 @@
   After installation, please find the file in your home folder "~/myros.sh".
   Then change the catkin workspace name according to your own workspace in your home folder, such as:
   
-    ROS_CATKINWS_NAME='drones'
+    ROS_CATKINWS_NAME='catkin_ws'
     
   Then, open a new terminal, enjoy it!
 
@@ -25,7 +26,7 @@
   
 # To install it, run:
       cd ~
-      git clone https://github.com/jeffsanc/auto.git
+      git clone https://github.com/zhanghanduo/auto.git
       cd auto
       ./install.sh
 

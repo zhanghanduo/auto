@@ -4,18 +4,14 @@
 # 
 #PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin 
 #export PATH 
-USER_NAME='eee' 
+USER_NAME='user' 
 ROS_USE_ROSBUILD='0'
 ROS_INFO_TIME='0'
-ROS_BUILDWS_NAME='indigo_workspace' 
+ROS_BUILDWS_NAME='build_workspace' 
 #ROS_CATKINWS_NAME='NTU_Research_Group_ROS'
-ROS_CATKINWS_NAME='drones'
+ROS_CATKINWS_NAME='catkin_ws'
 ROS_REMOTE_IP='' 
 #ROS_REMOTE_IP='192.168.1.127'
- 
-#Link MasterMind IP Address: 192.168.1.110
-#Link MiniPC: 192.168.1.15 
-#Link NCU MiniPC: 192.168.1.194 
  
 #==Do not edit below========================================================  
 if [ "$ROS_USE_ROSBUILD" = "1" ]; then 
@@ -35,7 +31,7 @@ echo $ROS_PACKAGE_PATH
 
 #Setting ROS INFO Time in Display
 if [ "$ROS_INFO_TIME" = "1" ]; then
-export ROSCONSOLE_FORMAT='[${severity}] [${time}]: ${message}'
+export ROSCONSOLE_FORMAT='[${severity}] [WallTime: ${time}]: ${message}'
 echo -e "ROS_INFO_TIME: \E[1;36mVISIBLE\E[0m" 
 else
 export ROSCONSOLE_FORMAT='[${severity}]: ${message}'

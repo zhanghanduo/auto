@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Installing..."
-echo "Author Jeffsan Chen Wang: jeffsan.wang@gmail.com"
+echo "Author Zhang Handuo: hzhang032@e.ntu.edu.sg"
 sudo cp git-prompt.sh ~/
 sudo cp git-completion.bash ~/
 sudo cp myros.sh ~/
